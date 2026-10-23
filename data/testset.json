@@ -1,0 +1,3301 @@
+[
+ {
+  "id": "t001",
+  "utterance": "stelle das Gebläse auf Stufe 5",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "5"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0005,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t002",
+  "utterance": "open the driver window",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "driver",
+    "position": "open"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00042,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t003",
+  "utterance": "turn the blower to level 3",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "3"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t004",
+  "utterance": "book a flight and play it safe",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0005,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t005",
+  "utterance": "mach alle Fenster zu",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "all",
+    "position": "close"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0004,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t006",
+  "utterance": "order a pizza",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00033,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t007",
+  "utterance": "wie weit komme ich noch",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "range"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "hard",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00043,
+   "medium_s": 0.27,
+   "high_s": 1.32,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t008",
+  "utterance": "find work and start route guidance",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "work"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00054,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t009",
+  "utterance": "set temperature to 17",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "17"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00041,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t010",
+  "utterance": "I'm hungry, is there somewhere to eat on the way",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "restaurant"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00068,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t011",
+  "utterance": "show remaining range",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "range"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0004,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t012",
+  "utterance": "it's stuffy, put the air on 3",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "3"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00049,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t013",
+  "utterance": "mir ist kalt, heiz auf der Beifahrerseite auf 27 hoch",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "27",
+    "zone": "passenger"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00073,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t014",
+  "utterance": "zeig mir bitte den Reifendruck",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "tire_pressure"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0005,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t015",
+  "utterance": "buche einen Flug nach Hause für morgen",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "hard",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00058,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t016",
+  "utterance": "what is the meaning of life",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00047,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t017",
+  "utterance": "bring mich bitte zu einem Restaurant",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "restaurant"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00056,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t018",
+  "utterance": "stell die Lautstärke bitte auf 2",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "2"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00052,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t019",
+  "utterance": "der Akku ist fast leer, wo kann ich laden",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "charging_station"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "hard",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00061,
+   "medium_s": 0.39,
+   "high_s": 1.44,
+   "high_tokens": 462
+  }
+ },
+ {
+  "id": "t020",
+  "utterance": "roll down the passenger window",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "passenger",
+    "position": "open"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0005,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t021",
+  "utterance": "I need to fill up the tank soon, where can I do that",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "gas_station"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00072,
+   "medium_s": 0.49,
+   "high_s": 1.54,
+   "high_tokens": 467
+  }
+ },
+ {
+  "id": "t022",
+  "utterance": "play jazz",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "jazz"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00029,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t023",
+  "utterance": "wie ist der Ölstand",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "oil_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00039,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t024",
+  "utterance": "I should let Max know I'm running late, ring them",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "max"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00069,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t025",
+  "utterance": "close the passenger window",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "passenger",
+    "position": "close"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t026",
+  "utterance": "bestelle mir eine Pizza",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00043,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t027",
+  "utterance": "please phone my mother",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "mom"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00042,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t028",
+  "utterance": "it's way too loud, bring the sound down to 6",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "6"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00064,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t029",
+  "utterance": "battery is getting low, find me somewhere to charge",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "charging_station"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00071,
+   "medium_s": 0.39,
+   "high_s": 1.44,
+   "high_tokens": 462
+  }
+ },
+ {
+  "id": "t030",
+  "utterance": "set the temperature to 27 degrees",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "27"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00053,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t031",
+  "utterance": "Lautstärke auf 6",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "6"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t032",
+  "utterance": "I'm bored, something with saxophones would be nice",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "jazz"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0007,
+   "medium_s": 0.35,
+   "high_s": 1.4,
+   "high_tokens": 460
+  }
+ },
+ {
+  "id": "t033",
+  "utterance": "erzähl mir einen Witz",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00041,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t034",
+  "utterance": "öffne das Beifahrerfenster",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "passenger",
+    "position": "open"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t035",
+  "utterance": "navigate to a restaurant nearby",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "restaurant"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00051,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t036",
+  "utterance": "mach es bitte 17 Grad warm",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "17"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t037",
+  "utterance": "set volume to 2",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "2"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00035,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t038",
+  "utterance": "it's raining in, shut the driver window",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "driver",
+    "position": "close"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00059,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t039",
+  "utterance": "rufe Anna an",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "anna"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00032,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t040",
+  "utterance": "ich möchte Nachrichten hören",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "news"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00048,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t041",
+  "utterance": "kannst du bitte Lena anrufen",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "lena"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00048,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t042",
+  "utterance": "take me to work",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "work"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00035,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t043",
+  "utterance": "set an alarm for 7 tomorrow",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00047,
+   "medium_s": 0.31,
+   "high_s": 1.36,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t044",
+  "utterance": "how much air is in my tires",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "tire_pressure"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00047,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t045",
+  "utterance": "how far can I drive before I need to charge",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "range"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00063,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t046",
+  "utterance": "passenger says it's too cold, warm their side to 16",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "16",
+    "zone": "passenger"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00071,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t047",
+  "utterance": "make it 23 degrees in here",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "23"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t048",
+  "utterance": "Lüftung auf 3 bitte",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "3"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00039,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t049",
+  "utterance": "put on some jazz",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "jazz"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t050",
+  "utterance": "turn on the dishwasher at home",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0005,
+   "medium_s": 0.31,
+   "high_s": 1.36,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t051",
+  "utterance": "change the volume level to 8",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "8"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00048,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t052",
+  "utterance": "what is my battery level",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "battery_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00044,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t053",
+  "utterance": "stelle die Temperatur auf 28 Grad",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "28"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00053,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t054",
+  "utterance": "spiele Nachrichten",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "news"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00038,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t055",
+  "utterance": "tell me a joke",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00034,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t056",
+  "utterance": "I'm freezing, could you bump the heat up to 27 please",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "27"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00073,
+   "medium_s": 0.43,
+   "high_s": 1.48,
+   "high_tokens": 464
+  }
+ },
+ {
+  "id": "t057",
+  "utterance": "set the driver side to 19 degrees",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "19",
+    "zone": "driver"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00053,
+   "medium_s": 0.33,
+   "high_s": 1.08,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t058",
+  "utterance": "call Max",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "max"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00028,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t059",
+  "utterance": "can you check the tire pressure for me",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "tire_pressure"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00058,
+   "medium_s": 0.35,
+   "high_s": 1.1,
+   "high_tokens": 460
+  }
+ },
+ {
+  "id": "t060",
+  "utterance": "set fan speed to 2",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "2"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00038,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t061",
+  "utterance": "navigiere zu einem Parkhaus",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "parking"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00047,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t062",
+  "utterance": "can you check the battery level for me",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "battery_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00058,
+   "medium_s": 0.35,
+   "high_s": 1.1,
+   "high_tokens": 460
+  }
+ },
+ {
+  "id": "t063",
+  "utterance": "I'm freezing, could you bump the heat up to 25 please",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "25"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00073,
+   "medium_s": 0.43,
+   "high_s": 1.48,
+   "high_tokens": 464
+  }
+ },
+ {
+  "id": "t064",
+  "utterance": "rufe David an",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "david"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00033,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t065",
+  "utterance": "call mom",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "mom"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00028,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t066",
+  "utterance": "zeig mir bitte den Akkustand",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "battery_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00048,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t067",
+  "utterance": "ich möchte Jazz hören",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "jazz"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00041,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t068",
+  "utterance": "navigate to home",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "home"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t069",
+  "utterance": "find a parking spot and start route guidance",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "parking"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00064,
+   "medium_s": 0.35,
+   "high_s": 1.1,
+   "high_tokens": 460
+  }
+ },
+ {
+  "id": "t070",
+  "utterance": "put on some classical music",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "classical"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00047,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t071",
+  "utterance": "set the temperature to 23 degrees",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "23"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00053,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t072",
+  "utterance": "mir ist kalt, heiz auf der Beifahrerseite auf 23 hoch",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "23",
+    "zone": "passenger"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00073,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t073",
+  "utterance": "spiele Popmusik",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "pop"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00035,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t074",
+  "utterance": "take me to the nearest charger",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "charging_station"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0005,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t075",
+  "utterance": "open all windows",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "all",
+    "position": "open"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t076",
+  "utterance": "play the news",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "news"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00033,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t077",
+  "utterance": "Lautstärke auf 3",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "3"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t078",
+  "utterance": "set volume to 9",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "9"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00035,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t079",
+  "utterance": "change the volume level to 1",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "1"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00048,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t080",
+  "utterance": "show oil level",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "oil_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00034,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t081",
+  "utterance": "I should let Anna know I'm running late, ring them",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "anna"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0007,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t082",
+  "utterance": "what is my range",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "range"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t083",
+  "utterance": "it's raining in, shut the passenger window",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "passenger",
+    "position": "close"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00062,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t084",
+  "utterance": "Lüftung auf 2 bitte",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "2"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00039,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t085",
+  "utterance": "make it 28 degrees in here",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "28"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t086",
+  "utterance": "it's stuffy, put the air on 2",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "2"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00049,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t087",
+  "utterance": "close the driver window",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "driver",
+    "position": "close"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00043,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t088",
+  "utterance": "please phone Lena",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "lena"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00037,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t089",
+  "utterance": "set fan speed to 3",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "3"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00038,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t090",
+  "utterance": "it's way too loud, bring the sound down to 4",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "4"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00064,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t091",
+  "utterance": "stelle die Temperatur auf 27 Grad",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "27"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00053,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t092",
+  "utterance": "set temperature to 25",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "25"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00041,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t093",
+  "utterance": "set the driver side to 21 degrees",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "21",
+    "zone": "driver"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00053,
+   "medium_s": 0.33,
+   "high_s": 1.08,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t094",
+  "utterance": "stell die Lautstärke bitte auf 8",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "8"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00052,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t095",
+  "utterance": "mach es bitte 28 Grad warm",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "28"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t096",
+  "utterance": "mach es bitte 20 Grad warm",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "20"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t097",
+  "utterance": "navigiere zu einem Restaurant",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "restaurant"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00049,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t098",
+  "utterance": "set the temperature to 28 degrees",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "28"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00053,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t099",
+  "utterance": "turn the blower to level 2",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "2"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t100",
+  "utterance": "I'm freezing, could you bump the heat up to 16 please",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "16"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00073,
+   "medium_s": 0.43,
+   "high_s": 1.48,
+   "high_tokens": 464
+  }
+ },
+ {
+  "id": "t101",
+  "utterance": "put on some the news",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "news"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0004,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t102",
+  "utterance": "Lüftung auf 5 bitte",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "5"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00039,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t103",
+  "utterance": "kannst du bitte meine Mutter anrufen",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "mom"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00056,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t104",
+  "utterance": "spiele Rockmusik",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "rock"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t105",
+  "utterance": "ich möchte Rockmusik hören",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "rock"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t106",
+  "utterance": "take me to a restaurant nearby",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "restaurant"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0005,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t107",
+  "utterance": "bring mich bitte zum nächsten Parkplatz",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "parking"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00059,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t108",
+  "utterance": "mir ist kalt, heiz auf der Beifahrerseite auf 25 hoch",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "25",
+    "zone": "passenger"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00073,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t109",
+  "utterance": "I should let David know I'm running late, ring them",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "david"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00071,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t110",
+  "utterance": "what is my oil level",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "oil_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0004,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t111",
+  "utterance": "show battery level",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "battery_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00038,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t112",
+  "utterance": "rufe Lena an",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "lena"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00032,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t113",
+  "utterance": "set temperature to 28",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "28"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00041,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t114",
+  "utterance": "set fan speed to 1",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "1"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00038,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t115",
+  "utterance": "stelle das Gebläse auf Stufe 1",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "1"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.0005,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t116",
+  "utterance": "mach das Fahrerfenster zu",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "driver",
+    "position": "close"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00045,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t117",
+  "utterance": "it's stuffy, put the air on 1",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "1"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00049,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t118",
+  "utterance": "Lautstärke auf 9",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "9"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t119",
+  "utterance": "öffne alle Fenster",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "all",
+    "position": "open"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00038,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t120",
+  "utterance": "stelle die Temperatur auf 23 Grad",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "23"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "clean"
+  },
+  "cost": {
+   "low_s": 0.00053,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t121",
+  "utterance": "taek me to woork",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "work"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t122",
+  "utterance": "chnge the vollume level to 1",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "1"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00048,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t123",
+  "utterance": "call mom",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "mom"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00028,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t124",
+  "utterance": "set volumme to 9",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "9"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t125",
+  "utterance": "zeig mir btte den Akksutand",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "battery_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00047,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t126",
+  "utterance": "bestele mir einne Pizza",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00043,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t127",
+  "utterance": "set fan speeed to 3",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "3"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00039,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t128",
+  "utterance": "mcah es bitte 17 Grad wrm",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "17"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00045,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t129",
+  "utterance": "cll Max",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "max"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "easy",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00027,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t130",
+  "utterance": "mach das Fahrerfenstr zu",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "driver",
+    "position": "close"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00044,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t131",
+  "utterance": "find a parkinng spot and start rouute guidance",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "parking"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00066,
+   "medium_s": 0.35,
+   "high_s": 1.1,
+   "high_tokens": 460
+  }
+ },
+ {
+  "id": "t132",
+  "utterance": "sppiele Rokmusik",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "rock"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t133",
+  "utterance": "can you check the baattery level for me",
+  "expected": {
+   "action": "get_vehicle_status",
+   "slots": {
+    "item": "battery_level"
+   }
+  },
+  "tags": {
+   "category": "vehicle_info",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00059,
+   "medium_s": 0.35,
+   "high_s": 1.1,
+   "high_tokens": 460
+  }
+ },
+ {
+  "id": "t134",
+  "utterance": "Lauutstärke auf 9",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "9"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00037,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t135",
+  "utterance": "I'm bored, somtehing with saxophones would be nice",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "jazz"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.0007,
+   "medium_s": 0.35,
+   "high_s": 1.4,
+   "high_tokens": 460
+  }
+ },
+ {
+  "id": "t136",
+  "utterance": "it's way too loud, brig the souund down to 4",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "4"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00064,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t137",
+  "utterance": "ich möhcte Jazz hören",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "jazz"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00041,
+   "medium_s": 0.25,
+   "high_s": 1.0,
+   "high_tokens": 455
+  }
+ },
+ {
+  "id": "t138",
+  "utterance": "öffne das Biefahrerfenster",
+  "expected": {
+   "action": "window_control",
+   "slots": {
+    "window": "passenger",
+    "position": "open"
+   }
+  },
+  "tags": {
+   "category": "windows",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00046,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t139",
+  "utterance": "mir ist kalt, heiz auf der Beifahrersete auf 23 hoch",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "23",
+    "zone": "passenger"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00072,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t140",
+  "utterance": "stelle das Geblääse auf Stufe 1",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "1"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00051,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t141",
+  "utterance": "rufe Lean an",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "lena"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00032,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ },
+ {
+  "id": "t142",
+  "utterance": "sttell die Lautstärke bittte auf 2",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "2"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00054,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t143",
+  "utterance": "spiele Nachichten",
+  "expected": {
+   "action": "play_media",
+   "slots": {
+    "genre": "news"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00037,
+   "medium_s": 0.21,
+   "high_s": 0.96,
+   "high_tokens": 453
+  }
+ },
+ {
+  "id": "t144",
+  "utterance": "what is the meaning of liffe",
+  "expected": {
+   "action": "unsupported",
+   "slots": {}
+  },
+  "tags": {
+   "category": "out_of_scope",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00048,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t145",
+  "utterance": "change the voulme levl to 8",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "8"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00047,
+   "medium_s": 0.31,
+   "high_s": 1.06,
+   "high_tokens": 458
+  }
+ },
+ {
+  "id": "t146",
+  "utterance": "set the drivr side to 19 dgerees",
+  "expected": {
+   "action": "set_temperature",
+   "slots": {
+    "temperature": "19",
+    "zone": "driver"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "medium",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00052,
+   "medium_s": 0.33,
+   "high_s": 1.08,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t147",
+  "utterance": "kanst du bitte Lena anrufen",
+  "expected": {
+   "action": "call_contact",
+   "slots": {
+    "contact": "lena"
+   }
+  },
+  "tags": {
+   "category": "phone",
+   "difficulty": "medium",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00047,
+   "medium_s": 0.27,
+   "high_s": 1.02,
+   "high_tokens": 456
+  }
+ },
+ {
+  "id": "t148",
+  "utterance": "I'm hungry, is thhere somewhere to eat on the way",
+  "expected": {
+   "action": "navigate",
+   "slots": {
+    "destination": "restaurant"
+   }
+  },
+  "tags": {
+   "category": "navigation",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00069,
+   "medium_s": 0.41,
+   "high_s": 1.46,
+   "high_tokens": 463
+  }
+ },
+ {
+  "id": "t149",
+  "utterance": "it's stuffy, put the air on 2",
+  "expected": {
+   "action": "set_fan_speed",
+   "slots": {
+    "level": "2"
+   }
+  },
+  "tags": {
+   "category": "climate",
+   "difficulty": "hard",
+   "language": "en",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00049,
+   "medium_s": 0.33,
+   "high_s": 1.38,
+   "high_tokens": 459
+  }
+ },
+ {
+  "id": "t150",
+  "utterance": "Lautsätrke auf 6",
+  "expected": {
+   "action": "set_volume",
+   "slots": {
+    "level": "6"
+   }
+  },
+  "tags": {
+   "category": "media",
+   "difficulty": "easy",
+   "language": "de",
+   "noise": "typo"
+  },
+  "cost": {
+   "low_s": 0.00036,
+   "medium_s": 0.23,
+   "high_s": 0.98,
+   "high_tokens": 454
+  }
+ }
+]

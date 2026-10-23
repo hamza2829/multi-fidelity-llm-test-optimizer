@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Unit and integration tests
+        run: python -m pytest -v
+      - name: Full pipeline run (low and medium only, no API key)
+        run: python -m mfopt.run --out ci-output
+      - name: Check committed results match a fresh run
+        if: matrix.python-version == '3.12'
+        run: diff <(python -c "import json;d=json.load(open('docs/results.json'));d.pop('runtime_s');print(json.dumps(d,sort_keys=True))") <(python -c "import json;d=json.load(open('ci-output/results.json'));d.pop('runtime_s');print(json.dumps(d,sort_keys=True))")
+      - uses: actions/upload-artifact@v4
+        if: matrix.python-version == '3.12'
+        with:
+          name: results
+          path: ci-output/

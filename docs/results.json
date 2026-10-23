@@ -1,0 +1,1225 @@
+{
+ "config": {
+  "seed": 0,
+  "eval_seeds": 5,
+  "random_seeds": 20,
+  "per_stratum": 10,
+  "n_tests": 150,
+  "medium_error_rate": 0.08,
+  "cheap_level": "low",
+  "expensive_level": "medium",
+  "cost_unit": "medium_s"
+ },
+ "notes": [
+  "High fidelity (LLM) skipped: disabled and not fully cached. Medium is used as the expensive level."
+ ],
+ "levels": [
+  "low",
+  "medium"
+ ],
+ "summaries": {
+  "low": {
+   "n": 150,
+   "exact_match": 0.4666666666666667,
+   "intent_accuracy": 0.49333333333333335,
+   "slot_precision": 0.9850746268656716,
+   "slot_recall": 0.4125,
+   "slot_f1": 0.5814977973568282,
+   "failures": 80,
+   "error_types": {
+    "wrong_action": 76,
+    "missing_slot": 3,
+    "wrong_slot_value": 1
+   },
+   "failure_categories": [
+    "category=climate/missing_slot",
+    "category=climate/wrong_action",
+    "category=media/missing_slot",
+    "category=media/wrong_action",
+    "category=navigation/missing_slot",
+    "category=navigation/wrong_action",
+    "category=phone/missing_slot",
+    "category=phone/wrong_action",
+    "category=vehicle_info/missing_slot",
+    "category=vehicle_info/wrong_action",
+    "category=windows/missing_slot",
+    "category=windows/wrong_action",
+    "category=windows/wrong_slot_value",
+    "difficulty=easy/missing_slot",
+    "difficulty=easy/wrong_action",
+    "difficulty=easy/wrong_slot_value",
+    "difficulty=hard/missing_slot",
+    "difficulty=hard/wrong_action",
+    "difficulty=medium/missing_slot",
+    "difficulty=medium/wrong_action",
+    "language=de/missing_slot",
+    "language=de/wrong_action",
+    "language=de/wrong_slot_value",
+    "language=en/missing_slot",
+    "language=en/wrong_action",
+    "noise=clean/missing_slot",
+    "noise=clean/wrong_action",
+    "noise=typo/missing_slot",
+    "noise=typo/wrong_action",
+    "noise=typo/wrong_slot_value"
+   ],
+   "by_tag": {
+    "category": {
+     "climate": {
+      "n": 42,
+      "accuracy": 0.3333333333333333
+     },
+     "media": {
+      "n": 34,
+      "accuracy": 0.4411764705882353
+     },
+     "navigation": {
+      "n": 18,
+      "accuracy": 0.5
+     },
+     "out_of_scope": {
+      "n": 11,
+      "accuracy": 1.0
+     },
+     "phone": {
+      "n": 16,
+      "accuracy": 0.375
+     },
+     "vehicle_info": {
+      "n": 16,
+      "accuracy": 0.5625
+     },
+     "windows": {
+      "n": 13,
+      "accuracy": 0.46153846153846156
+     }
+    },
+    "difficulty": {
+     "easy": {
+      "n": 64,
+      "accuracy": 0.828125
+     },
+     "hard": {
+      "n": 34,
+      "accuracy": 0.11764705882352941
+     },
+     "medium": {
+      "n": 52,
+      "accuracy": 0.25
+     }
+    },
+    "language": {
+     "de": {
+      "n": 61,
+      "accuracy": 0.4918032786885246
+     },
+     "en": {
+      "n": 89,
+      "accuracy": 0.449438202247191
+     }
+    },
+    "noise": {
+     "clean": {
+      "n": 120,
+      "accuracy": 0.55
+     },
+     "typo": {
+      "n": 30,
+      "accuracy": 0.13333333333333333
+     }
+    }
+   }
+  },
+  "medium": {
+   "n": 150,
+   "exact_match": 0.8133333333333334,
+   "intent_accuracy": 0.8933333333333333,
+   "slot_precision": 0.9517241379310345,
+   "slot_recall": 0.8625,
+   "slot_f1": 0.9049180327868853,
+   "failures": 28,
+   "error_types": {
+    "wrong_action": 11,
+    "wrong_slot_value": 6,
+    "invalid_output": 5,
+    "missing_slot": 5,
+    "extra_slot": 1
+   },
+   "failure_categories": [
+    "category=climate/extra_slot",
+    "category=climate/invalid_output",
+    "category=climate/missing_slot",
+    "category=climate/wrong_action",
+    "category=climate/wrong_slot_value",
+    "category=media/invalid_output",
+    "category=media/missing_slot",
+    "category=media/wrong_action",
+    "category=media/wrong_slot_value",
+    "category=navigation/invalid_output",
+    "category=navigation/wrong_action",
+    "category=out_of_scope/wrong_action",
+    "category=phone/missing_slot",
+    "category=phone/wrong_slot_value",
+    "category=vehicle_info/invalid_output",
+    "category=vehicle_info/missing_slot",
+    "category=vehicle_info/wrong_action",
+    "difficulty=easy/extra_slot",
+    "difficulty=easy/invalid_output",
+    "difficulty=easy/missing_slot",
+    "difficulty=easy/wrong_action",
+    "difficulty=easy/wrong_slot_value",
+    "difficulty=hard/missing_slot",
+    "difficulty=hard/wrong_action",
+    "difficulty=hard/wrong_slot_value",
+    "difficulty=medium/invalid_output",
+    "difficulty=medium/missing_slot",
+    "difficulty=medium/wrong_action",
+    "difficulty=medium/wrong_slot_value",
+    "language=de/invalid_output",
+    "language=de/missing_slot",
+    "language=de/wrong_action",
+    "language=de/wrong_slot_value",
+    "language=en/extra_slot",
+    "language=en/invalid_output",
+    "language=en/missing_slot",
+    "language=en/wrong_action",
+    "language=en/wrong_slot_value",
+    "noise=clean/invalid_output",
+    "noise=clean/missing_slot",
+    "noise=clean/wrong_action",
+    "noise=clean/wrong_slot_value",
+    "noise=typo/extra_slot",
+    "noise=typo/missing_slot",
+    "noise=typo/wrong_action"
+   ],
+   "by_tag": {
+    "category": {
+     "climate": {
+      "n": 42,
+      "accuracy": 0.7380952380952381
+     },
+     "media": {
+      "n": 34,
+      "accuracy": 0.8235294117647058
+     },
+     "navigation": {
+      "n": 18,
+      "accuracy": 0.7777777777777778
+     },
+     "out_of_scope": {
+      "n": 11,
+      "accuracy": 0.9090909090909091
+     },
+     "phone": {
+      "n": 16,
+      "accuracy": 0.8125
+     },
+     "vehicle_info": {
+      "n": 16,
+      "accuracy": 0.8125
+     },
+     "windows": {
+      "n": 13,
+      "accuracy": 1.0
+     }
+    },
+    "difficulty": {
+     "easy": {
+      "n": 64,
+      "accuracy": 0.765625
+     },
+     "hard": {
+      "n": 34,
+      "accuracy": 0.7647058823529411
+     },
+     "medium": {
+      "n": 52,
+      "accuracy": 0.9038461538461539
+     }
+    },
+    "language": {
+     "de": {
+      "n": 61,
+      "accuracy": 0.8360655737704918
+     },
+     "en": {
+      "n": 89,
+      "accuracy": 0.797752808988764
+     }
+    },
+    "noise": {
+     "clean": {
+      "n": 120,
+      "accuracy": 0.825
+     },
+     "typo": {
+      "n": 30,
+      "accuracy": 0.7666666666666667
+     }
+    }
+   }
+  }
+ },
+ "total_cost": {
+  "low": 0.07184,
+  "medium": 44.02,
+  "high": 166.72
+ },
+ "total_high_tokens": 68576,
+ "agreements": {
+  "low_vs_medium": {
+   "pass_fail_agreement": 0.4666666666666667,
+   "kappa": -0.023890784982935225,
+   "same_output": 0.4,
+   "both_pass": 56,
+   "cheap_pass_expensive_fail": 14,
+   "cheap_fail_expensive_pass": 66,
+   "both_fail": 14,
+   "tests_failing_only_at_expensive": [
+    "t001",
+    "t004",
+    "t009",
+    "t017",
+    "t035",
+    "t051",
+    "t053",
+    "t061",
+    "t073",
+    "t077",
+    "t089",
+    "t092",
+    "t110",
+    "t115"
+   ],
+   "failure_categories_only_at_expensive": [
+    "category=climate/extra_slot",
+    "category=climate/invalid_output",
+    "category=climate/wrong_slot_value",
+    "category=media/invalid_output",
+    "category=media/wrong_slot_value",
+    "category=navigation/invalid_output",
+    "category=out_of_scope/wrong_action",
+    "category=phone/wrong_slot_value",
+    "category=vehicle_info/invalid_output",
+    "difficulty=easy/extra_slot",
+    "difficulty=easy/invalid_output",
+    "difficulty=hard/wrong_slot_value",
+    "difficulty=medium/invalid_output",
+    "difficulty=medium/wrong_slot_value",
+    "language=de/invalid_output",
+    "language=en/extra_slot",
+    "language=en/invalid_output",
+    "language=en/wrong_slot_value",
+    "noise=clean/invalid_output",
+    "noise=clean/wrong_slot_value",
+    "noise=typo/extra_slot"
+   ],
+   "failure_categories_only_at_cheap": [
+    "category=navigation/missing_slot",
+    "category=phone/wrong_action",
+    "category=windows/missing_slot",
+    "category=windows/wrong_action",
+    "category=windows/wrong_slot_value",
+    "noise=typo/wrong_slot_value"
+   ]
+  }
+ },
+ "fresh_runs_failure_categories": [
+  55,
+  53,
+  46,
+  48,
+  45
+ ],
+ "calibration_failure_categories": 45,
+ "selection": {
+  "greedy_set_cover": {
+   "ids": [
+    "t001",
+    "t135",
+    "t073",
+    "t061",
+    "t127",
+    "t051",
+    "t057",
+    "t017",
+    "t044",
+    "t024",
+    "t141",
+    "t089",
+    "t110",
+    "t004",
+    "t133",
+    "t115",
+    "t054",
+    "t106",
+    "t119",
+    "t058",
+    "t009",
+    "t035",
+    "t071",
+    "t068",
+    "t055",
+    "t093",
+    "t136",
+    "t103",
+    "t067",
+    "t139",
+    "t041",
+    "t088",
+    "t145",
+    "t029",
+    "t083"
+   ],
+   "coverage_ids": [
+    "t001",
+    "t135",
+    "t073",
+    "t061",
+    "t127",
+    "t051",
+    "t057",
+    "t017",
+    "t044",
+    "t024",
+    "t141",
+    "t089",
+    "t110",
+    "t004",
+    "t133"
+   ],
+   "sample_ids": [
+    "t115",
+    "t054",
+    "t106",
+    "t119",
+    "t058",
+    "t009",
+    "t035",
+    "t071",
+    "t068",
+    "t055",
+    "t093",
+    "t136",
+    "t103",
+    "t067",
+    "t139",
+    "t041",
+    "t088",
+    "t145",
+    "t029",
+    "t083"
+   ],
+   "method": {
+    "size": 35,
+    "cost_saved": 0.7632439800090868,
+    "coverage_calibration": 1.0,
+    "estimation_error_calibration": 0.07002777777777777,
+    "coverage_fresh": 0.645409138555365,
+    "estimation_error_fresh": 0.057477777777777773
+   },
+   "method_spread": {
+    "cost_saved": {
+     "mean": 0.7632439800090868,
+     "std": 0.003367629343063413,
+     "min": 0.7571558382553385,
+     "max": 0.7694229895502045
+    },
+    "coverage_calibration": {
+     "mean": 1.0,
+     "std": 0.0,
+     "min": 1.0,
+     "max": 1.0
+    },
+    "estimation_error_calibration": {
+     "mean": 0.07002777777777777,
+     "std": 0.036403718352340665,
+     "min": 0.012777777777777777,
+     "max": 0.17333333333333334
+    },
+    "coverage_fresh": {
+     "mean": 0.645409138555365,
+     "std": 0.0319986312028294,
+     "min": 0.5889695768182233,
+     "max": 0.706561554842933
+    },
+    "estimation_error_fresh": {
+     "mean": 0.057477777777777773,
+     "std": 0.01753983473323326,
+     "min": 0.03166666666666673,
+     "max": 0.09244444444444448
+    }
+   },
+   "random_same_size": {
+    "cost_saved": {
+     "mean": 0.7644934120854158,
+     "std": 0.0055221809266589005,
+     "min": 0.7485233984552476,
+     "max": 0.7730577010449795
+    },
+    "coverage_calibration": {
+     "mean": 0.48777777777777775,
+     "std": 0.125210933139953,
+     "min": 0.17777777777777778,
+     "max": 0.7111111111111111
+    },
+    "estimation_error_calibration": {
+     "mean": 0.04750928911379175,
+     "std": 0.03565646203311974,
+     "min": 0.0,
+     "max": 0.10936842105263156
+    },
+    "coverage_fresh": {
+     "mean": 0.4771537255243162,
+     "std": 0.06936750520409486,
+     "min": 0.36028944075703717,
+     "max": 0.5978561248249518
+    },
+    "estimation_error_fresh": {
+     "mean": 0.04829320123219437,
+     "std": 0.016797965172894298,
+     "min": 0.022253119429590008,
+     "max": 0.10126984126984129
+    }
+   }
+  },
+  "cost_aware_ranking": {
+   "ids": [
+    "t127",
+    "t073",
+    "t044",
+    "t051",
+    "t061",
+    "t141",
+    "t089",
+    "t110",
+    "t135",
+    "t140",
+    "t133",
+    "t057",
+    "t004",
+    "t131",
+    "t024",
+    "t104",
+    "t098",
+    "t115",
+    "t054",
+    "t006",
+    "t033",
+    "t066",
+    "t065",
+    "t053",
+    "t106",
+    "t093",
+    "t137",
+    "t103",
+    "t067",
+    "t143",
+    "t041",
+    "t088",
+    "t145",
+    "t109",
+    "t013"
+   ],
+   "coverage_ids": [
+    "t127",
+    "t073",
+    "t044",
+    "t051",
+    "t061",
+    "t141",
+    "t089",
+    "t110",
+    "t135",
+    "t140",
+    "t133",
+    "t057",
+    "t004",
+    "t131",
+    "t024"
+   ],
+   "sample_ids": [
+    "t104",
+    "t098",
+    "t115",
+    "t054",
+    "t006",
+    "t033",
+    "t066",
+    "t065",
+    "t053",
+    "t106",
+    "t093",
+    "t137",
+    "t103",
+    "t067",
+    "t143",
+    "t041",
+    "t088",
+    "t145",
+    "t109",
+    "t013"
+   ],
+   "method": {
+    "size": 35,
+    "cost_saved": 0.7621762835074967,
+    "coverage_calibration": 1.0,
+    "estimation_error_calibration": 0.05225,
+    "coverage_fresh": 0.6412197000770626,
+    "estimation_error_fresh": 0.06380555555555556
+   },
+   "method_spread": {
+    "cost_saved": {
+     "mean": 0.7621762835074967,
+     "std": 0.004549008338223393,
+     "min": 0.751249432076329,
+     "max": 0.7694229895502045
+    },
+    "coverage_calibration": {
+     "mean": 1.0,
+     "std": 0.0,
+     "min": 1.0,
+     "max": 1.0
+    },
+    "estimation_error_calibration": {
+     "mean": 0.05225,
+     "std": 0.031381009335481595,
+     "min": 0.01388888888888884,
+     "max": 0.1316666666666667
+    },
+    "coverage_fresh": {
+     "mean": 0.6412197000770626,
+     "std": 0.037096117629439006,
+     "min": 0.5661742734978994,
+     "max": 0.7137553964584318
+    },
+    "estimation_error_fresh": {
+     "mean": 0.06380555555555556,
+     "std": 0.025587489106308033,
+     "min": 0.022666666666666634,
+     "max": 0.11133333333333333
+    }
+   },
+   "random_same_size": {
+    "cost_saved": {
+     "mean": 0.7644934120854158,
+     "std": 0.0055221809266589005,
+     "min": 0.7485233984552476,
+     "max": 0.7730577010449795
+    },
+    "coverage_calibration": {
+     "mean": 0.48777777777777775,
+     "std": 0.125210933139953,
+     "min": 0.17777777777777778,
+     "max": 0.7111111111111111
+    },
+    "estimation_error_calibration": {
+     "mean": 0.04750928911379175,
+     "std": 0.03565646203311974,
+     "min": 0.0,
+     "max": 0.10936842105263156
+    },
+    "coverage_fresh": {
+     "mean": 0.4771537255243162,
+     "std": 0.06936750520409486,
+     "min": 0.36028944075703717,
+     "max": 0.5978561248249518
+    },
+    "estimation_error_fresh": {
+     "mean": 0.04829320123219437,
+     "std": 0.016797965172894298,
+     "min": 0.022253119429590008,
+     "max": 0.10126984126984129
+    }
+   }
+  }
+ },
+ "cheap_only_estimate_error": 0.3466666666666667,
+ "curves": {
+  "cost_pct": [
+   0,
+   2,
+   4,
+   6,
+   8,
+   10,
+   12,
+   14,
+   16,
+   18,
+   20,
+   22,
+   24,
+   26,
+   28,
+   30,
+   32,
+   34,
+   36,
+   38,
+   40,
+   42,
+   44,
+   46,
+   48,
+   50,
+   52,
+   54,
+   56,
+   58,
+   60,
+   62,
+   64,
+   66,
+   68,
+   70,
+   72,
+   74,
+   76,
+   78,
+   80,
+   82,
+   84,
+   86,
+   88,
+   90,
+   92,
+   94,
+   96,
+   98,
+   100
+  ],
+  "greedy_set_cover": [
+   0.0,
+   34.2568838508133,
+   37.37809597202542,
+   40.00732302516552,
+   47.57253420173847,
+   48.66344329264756,
+   57.20251323737788,
+   59.464805976085714,
+   59.464805976085714,
+   61.889048400328136,
+   61.889048400328136,
+   65.66001276091514,
+   66.0236491245515,
+   66.9125380134404,
+   67.63981074071312,
+   67.63981074071312,
+   69.75629966606176,
+   69.75629966606176,
+   70.91396118693083,
+   73.03045011227948,
+   73.8288690846115,
+   73.8288690846115,
+   73.8288690846115,
+   76.56119231693472,
+   78.2278589836014,
+   80.2718841408341,
+   81.53813152028903,
+   82.78505522824636,
+   85.26518051723137,
+   86.77461447949553,
+   87.20939708819118,
+   87.20939708819118,
+   88.47751303022017,
+   91.22014857351199,
+   91.22014857351199,
+   92.08971379090329,
+   94.60288487831556,
+   94.60288487831556,
+   95.0376674870112,
+   95.0376674870112,
+   96.36133898459575,
+   96.77800565126242,
+   96.77800565126242,
+   97.94938929906117,
+   98.80083857442348,
+   98.80083857442348,
+   98.80083857442348,
+   99.17819706498952,
+   99.62264150943396,
+   99.62264150943396,
+   100.0
+  ],
+  "cost_aware_ranking": [
+   0.0,
+   19.082987379952105,
+   29.988117433564522,
+   36.017975074783934,
+   50.377422709457164,
+   51.46833180036626,
+   57.957230218509956,
+   59.464805976085714,
+   59.464805976085714,
+   61.889048400328136,
+   61.889048400328136,
+   65.66001276091514,
+   66.0236491245515,
+   66.9125380134404,
+   67.63981074071312,
+   67.63981074071312,
+   69.75629966606176,
+   69.75629966606176,
+   70.91396118693083,
+   73.03045011227948,
+   73.8288690846115,
+   73.8288690846115,
+   73.8288690846115,
+   76.56119231693472,
+   78.2278589836014,
+   80.2718841408341,
+   81.53813152028903,
+   82.78505522824636,
+   85.26518051723137,
+   86.77461447949553,
+   87.20939708819118,
+   87.20939708819118,
+   88.47751303022017,
+   91.22014857351199,
+   91.22014857351199,
+   92.08971379090329,
+   94.60288487831556,
+   94.60288487831556,
+   95.0376674870112,
+   95.0376674870112,
+   96.36133898459575,
+   96.77800565126242,
+   96.77800565126242,
+   97.94938929906117,
+   98.80083857442348,
+   98.80083857442348,
+   98.80083857442348,
+   99.17819706498952,
+   99.62264150943396,
+   99.62264150943396,
+   100.0
+  ],
+  "random_mean": [
+   0.0,
+   3.825225594749795,
+   10.090134735376736,
+   15.227525045367539,
+   19.99807757642048,
+   25.52555217888483,
+   29.63435876401422,
+   32.83859938598454,
+   36.22814465408805,
+   40.4444056023732,
+   42.619105948740895,
+   45.02312118311913,
+   48.05302046303892,
+   50.07957248862704,
+   52.76038274459111,
+   55.61607336697575,
+   57.54533066514199,
+   60.13257575757576,
+   61.55213942128421,
+   63.103531624696515,
+   64.68566613634292,
+   67.42373861668365,
+   69.20571838151822,
+   70.85674868040536,
+   72.54703484807054,
+   74.18993990354737,
+   75.69805686064915,
+   77.40807376471855,
+   78.73073340045244,
+   80.77816288396681,
+   82.2687790538693,
+   83.48525233881058,
+   84.53432365078181,
+   85.52132906174128,
+   86.4931488801054,
+   87.80740402383142,
+   88.89524831995095,
+   90.32750495106934,
+   91.51655252276663,
+   92.49182638526364,
+   93.19509243377168,
+   94.3761687838185,
+   94.99298284319818,
+   95.44869718514099,
+   95.94284508331883,
+   96.53923743174153,
+   97.32164259494039,
+   97.97616598718936,
+   98.31233717403734,
+   99.11112840878017,
+   100.0
+  ],
+  "random_min": [
+   0.0,
+   0.0,
+   2.909090909090909,
+   5.551362683438155,
+   9.444867046179597,
+   12.982847341337907,
+   17.558604917095483,
+   21.787628127045682,
+   21.787628127045682,
+   25.07483986708761,
+   34.36095988598039,
+   36.02894407570371,
+   36.02894407570371,
+   36.02894407570371,
+   44.998295092019454,
+   47.22348795585055,
+   49.72073897299492,
+   50.376542289175596,
+   52.00861776087371,
+   52.38597625143974,
+   52.74961261507611,
+   58.31571249823916,
+   59.070429479371235,
+   60.28112130327061,
+   61.92659573586563,
+   62.36137834456128,
+   63.947222429379934,
+   70.3540138878531,
+   74.16010391030899,
+   74.96818471838981,
+   77.10861486066572,
+   78.01944796612557,
+   78.01944796612557,
+   80.5569973732402,
+   80.92886618440352,
+   81.34553285107017,
+   81.34553285107017,
+   84.82477979135075,
+   86.14845128893529,
+   88.56303187742893,
+   89.37111268550973,
+   90.98914286424541,
+   91.42392547294106,
+   91.42392547294106,
+   91.42392547294106,
+   93.10683951906265,
+   93.62110232762407,
+   96.0875054896794,
+   96.27613708868836,
+   96.76515772988292,
+   100.0
+  ],
+  "random_max": [
+   0.0,
+   17.749654046618772,
+   24.386440284717562,
+   28.876136260057507,
+   36.03597293691633,
+   38.94968139143693,
+   43.15763044721207,
+   50.610390202268796,
+   50.610390202268796,
+   53.86049585270258,
+   54.90045657560013,
+   55.27781506616617,
+   59.785612482495175,
+   61.34621854310123,
+   63.441080203180285,
+   66.72138323348332,
+   66.72138323348332,
+   68.64385860243121,
+   70.78143825457197,
+   71.52243310877436,
+   72.82678093486133,
+   76.5786246385098,
+   77.84487201796472,
+   80.16898268990147,
+   84.35442198854832,
+   84.35442198854832,
+   85.15284096088034,
+   86.03206801402044,
+   86.82609317125313,
+   89.34552663633878,
+   89.70916299997515,
+   90.51724380805595,
+   91.78535975008494,
+   91.78535975008494,
+   91.78535975008494,
+   92.54007673121701,
+   94.60661164557801,
+   97.65250536538477,
+   97.65250536538477,
+   98.47430830039525,
+   98.47430830039525,
+   98.47430830039525,
+   98.9090909090909,
+   98.9090909090909,
+   99.27272727272727,
+   99.62264150943396,
+   100.0,
+   100.0,
+   100.0,
+   100.0,
+   100.0
+  ]
+ },
+ "cheap_misses": [
+  {
+   "id": "t001",
+   "utterance": "stelle das Gebläse auf Stufe 5",
+   "tags": {
+    "category": "climate",
+    "difficulty": "easy",
+    "language": "de",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "set_fan_speed",
+    "slots": {
+     "level": "5"
+    }
+   },
+   "cheap_output": "{\"action\": \"set_fan_speed\", \"slots\": {\"level\": \"5\"}}",
+   "expensive_output": "{\"action\": \"unsupported\", \"slots\": {}}",
+   "expensive_error": "wrong_action"
+  },
+  {
+   "id": "t004",
+   "utterance": "book a flight and play it safe",
+   "tags": {
+    "category": "out_of_scope",
+    "difficulty": "hard",
+    "language": "en",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "unsupported",
+    "slots": {}
+   },
+   "cheap_output": "{\"action\": \"unsupported\", \"slots\": {}}",
+   "expensive_output": "{\"action\": \"navigate\", \"slots\": {}}",
+   "expensive_error": "wrong_action"
+  },
+  {
+   "id": "t009",
+   "utterance": "set temperature to 17",
+   "tags": {
+    "category": "climate",
+    "difficulty": "easy",
+    "language": "en",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "set_temperature",
+    "slots": {
+     "temperature": "17"
+    }
+   },
+   "cheap_output": "{\"action\": \"set_temperature\", \"slots\": {\"temperature\": \"17\"}}",
+   "expensive_output": "{\"action\": \"set_temperature\", \"slots\": {\"temperature\": \"16\"}}",
+   "expensive_error": "wrong_slot_value"
+  },
+  {
+   "id": "t017",
+   "utterance": "bring mich bitte zu einem Restaurant",
+   "tags": {
+    "category": "navigation",
+    "difficulty": "medium",
+    "language": "de",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "navigate",
+    "slots": {
+     "destination": "restaurant"
+    }
+   },
+   "cheap_output": "{\"action\": \"navigate\", \"slots\": {\"destination\": \"restaurant\"}}",
+   "expensive_output": "{\"action\": \"get_vehicle_status\", \"slots\": {\"destination\": \"restaurant\"}}",
+   "expensive_error": "wrong_action"
+  },
+  {
+   "id": "t035",
+   "utterance": "navigate to a restaurant nearby",
+   "tags": {
+    "category": "navigation",
+    "difficulty": "easy",
+    "language": "en",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "navigate",
+    "slots": {
+     "destination": "restaurant"
+    }
+   },
+   "cheap_output": "{\"action\": \"navigate\", \"slots\": {\"destination\": \"restaurant\"}}",
+   "expensive_output": "{\"action\": \"navigate\", \"slots\": {\"destination\": \"restaurant",
+   "expensive_error": "invalid_output"
+  },
+  {
+   "id": "t051",
+   "utterance": "change the volume level to 8",
+   "tags": {
+    "category": "media",
+    "difficulty": "medium",
+    "language": "en",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "set_volume",
+    "slots": {
+     "level": "8"
+    }
+   },
+   "cheap_output": "{\"action\": \"set_volume\", \"slots\": {\"level\": \"8\"}}",
+   "expensive_output": "{\"action\": \"set_volume\", \"slots\": {\"level\": \"8",
+   "expensive_error": "invalid_output"
+  },
+  {
+   "id": "t053",
+   "utterance": "stelle die Temperatur auf 28 Grad",
+   "tags": {
+    "category": "climate",
+    "difficulty": "easy",
+    "language": "de",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "set_temperature",
+    "slots": {
+     "temperature": "28"
+    }
+   },
+   "cheap_output": "{\"action\": \"set_temperature\", \"slots\": {\"temperature\": \"28\"}}",
+   "expensive_output": "{\"action\": \"set_temperature\", \"slots\": {}}",
+   "expensive_error": "missing_slot"
+  },
+  {
+   "id": "t061",
+   "utterance": "navigiere zu einem Parkhaus",
+   "tags": {
+    "category": "navigation",
+    "difficulty": "easy",
+    "language": "de",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "navigate",
+    "slots": {
+     "destination": "parking"
+    }
+   },
+   "cheap_output": "{\"action\": \"navigate\", \"slots\": {\"destination\": \"parking\"}}",
+   "expensive_output": "{\"action\": \"navigate\", \"slots\": {\"destination\": \"parking",
+   "expensive_error": "invalid_output"
+  },
+  {
+   "id": "t073",
+   "utterance": "spiele Popmusik",
+   "tags": {
+    "category": "media",
+    "difficulty": "easy",
+    "language": "de",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "play_media",
+    "slots": {
+     "genre": "pop"
+    }
+   },
+   "cheap_output": "{\"action\": \"play_media\", \"slots\": {\"genre\": \"pop\"}}",
+   "expensive_output": "{\"action\": \"play_media\", \"slots\": {\"genre\": \"rock\"}}",
+   "expensive_error": "wrong_slot_value"
+  },
+  {
+   "id": "t077",
+   "utterance": "Lautstärke auf 3",
+   "tags": {
+    "category": "media",
+    "difficulty": "easy",
+    "language": "de",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "set_volume",
+    "slots": {
+     "level": "3"
+    }
+   },
+   "cheap_output": "{\"action\": \"set_volume\", \"slots\": {\"level\": \"3\"}}",
+   "expensive_output": "{\"action\": \"play_media\", \"slots\": {\"level\": \"3\"}}",
+   "expensive_error": "wrong_action"
+  },
+  {
+   "id": "t089",
+   "utterance": "set fan speed to 3",
+   "tags": {
+    "category": "climate",
+    "difficulty": "easy",
+    "language": "en",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "set_fan_speed",
+    "slots": {
+     "level": "3"
+    }
+   },
+   "cheap_output": "{\"action\": \"set_fan_speed\", \"slots\": {\"level\": \"3\"}}",
+   "expensive_output": "{\"action\": \"set_fan_speed\", \"slots\": {\"level\": \"3",
+   "expensive_error": "invalid_output"
+  },
+  {
+   "id": "t092",
+   "utterance": "set temperature to 25",
+   "tags": {
+    "category": "climate",
+    "difficulty": "easy",
+    "language": "en",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "set_temperature",
+    "slots": {
+     "temperature": "25"
+    }
+   },
+   "cheap_output": "{\"action\": \"set_temperature\", \"slots\": {\"temperature\": \"25\"}}",
+   "expensive_output": "{\"action\": \"set_fan_speed\", \"slots\": {\"temperature\": \"25\"}}",
+   "expensive_error": "wrong_action"
+  },
+  {
+   "id": "t110",
+   "utterance": "what is my oil level",
+   "tags": {
+    "category": "vehicle_info",
+    "difficulty": "easy",
+    "language": "en",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "get_vehicle_status",
+    "slots": {
+     "item": "oil_level"
+    }
+   },
+   "cheap_output": "{\"action\": \"get_vehicle_status\", \"slots\": {\"item\": \"oil_level\"}}",
+   "expensive_output": "{\"action\": \"get_vehicle_status\", \"slots\": {\"item\": \"oil_level",
+   "expensive_error": "invalid_output"
+  },
+  {
+   "id": "t115",
+   "utterance": "stelle das Gebläse auf Stufe 1",
+   "tags": {
+    "category": "climate",
+    "difficulty": "easy",
+    "language": "de",
+    "noise": "clean"
+   },
+   "expected": {
+    "action": "set_fan_speed",
+    "slots": {
+     "level": "1"
+    }
+   },
+   "cheap_output": "{\"action\": \"set_fan_speed\", \"slots\": {\"level\": \"1\"}}",
+   "expensive_output": "{\"action\": \"unsupported\", \"slots\": {}}",
+   "expensive_error": "wrong_action"
+  }
+ ],
+ "runtime_s": 0.42
+}
